@@ -521,6 +521,53 @@ h4 {
   padding: var(--button-inverted-has-icon-padding);
 }
 
+h1 {
+  font-weight: normal;
+  letter-spacing: .125rem;
+  text-transform: uppercase;
+  color: white;
+}
+
+li {
+  display: inline-block;
+  font-size: 1.5em;
+  list-style-type: none;
+  padding: 1em;
+  color: white;
+  margin-left: -30px;
+  text-transform: uppercase;
+  font-family: 'Equinox Bold', sans-serif;
+}
+
+li span {
+  display: block;
+  color: white;
+  font-size: 4.5rem;
+}
+
+.header-content-block{
+  margin-top: -50px;
+}
+
+@media only screen and (max-width: 700px) {
+  h1 {
+    font-size: calc(1rem * var(--smaller));
+  }
+  
+  li {
+    font-size: calc(1.125rem * var(--smaller));
+    margin-left: 0.2px;
+  }
+  
+  li span {
+    font-size: 2rem;
+  }
+
+  .header-content-block{
+    margin-top: 15px;
+  }
+}
+
 .cs-button.has-icon:after {
   width: 30px;
   height: 30px;
@@ -1257,6 +1304,8 @@ form .honeypot {
   transform: translateY(40px);
 }
 
+
+
 #header.animIn .header-content-block h1,
 #header.animIn .header-content-block .content-divider,
 #header.animIn .header-content-block h2,
@@ -1282,6 +1331,14 @@ form .honeypot {
 #header.animIn .header-content-block .asj-square{transition-delay:2800ms;}
 #header.animIn .header-content-block .hint-note{transition-delay:2500ms;}
 
+
+#header .header-content-block .content-divider{
+  width: 45px;
+  height: 4px; 
+  transform: translateX(-15px);
+  margin-bottom: 20px;
+  margin-left: 17px;
+}
 
 /*######################### MESSAGES STYLES #########################*/
 
@@ -2530,12 +2587,14 @@ form .honeypot {
   height: 4px; 
   transform: translateX(-15px);
   margin-bottom: 20px;
+  margin-left: 17px;
 }
 
 #footer .social-btns {
   margin-top: 0px; 
   padding-left: 0;
   transform: translateX(-6px);
+  margin-left: 10px;
 }
 
 #footer .link-list {
