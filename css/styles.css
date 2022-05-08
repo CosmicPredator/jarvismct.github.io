@@ -566,6 +566,10 @@ li span {
   .header-content-block{
     margin-top: 15px;
   }
+
+  #footer .copyright-bar {
+    margin-left: -40px;
+  }
 }
 
 .cs-button.has-icon:after {
@@ -2644,6 +2648,7 @@ form .honeypot {
   font-weight: 800;
   font-family: 'Nunito Sans', sans-serif;
   text-align: center;
+  align-self: center;
 }
 
 
