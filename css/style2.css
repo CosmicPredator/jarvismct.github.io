@@ -81,8 +81,8 @@ background-size: cover;
 }
 
 .poster img {
-    width: 390px;
-    height: 400px;
+    width: 30%;
+    height: 30%;
     align-self: center;
     image-rendering:optimizeQuality;
     padding: 10px;
@@ -186,6 +186,11 @@ div.rules{
       width: 70%;
       color: aliceblue;
       align-content: center;
+     }
+
+     .poster img {
+       width: 70%;
+       height: 70%;
      }
   }
 
