@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	  console.log("Welcome to A Stranger's Journey!");
+	  console.log("Welcome to Jarvis 2k22!");
 	
 	  setTimeout(function() {
 			$('html, body').animate({scrollLeft:0}, 50);
