@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 
 * {
     padding: 0;
@@ -32,7 +32,7 @@
 
 .content-text {
     color: white;
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Cabin', sans-serif;
     font-size: xx-large;
     text-align: center;
     padding-right: 20px;
