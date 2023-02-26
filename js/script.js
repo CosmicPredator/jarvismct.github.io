@@ -33,15 +33,14 @@ var swiper = new Swiper(".home-slider", {
   grabCursor: true,
   centeredSlides: true,
   slidesPerView: "auto",
-  lazyPreloaderClass: "swiper-lazy-preloader",
   coverflowEffect: {
     rotate: 0,
     stretch: 0,
     depth: 100,
     modifier: 2,
-    slideShadows: false,
+    slideShadows: true,
   },
-  loop:true,
+  loop:false,
   autoplay:{
     delay: 1000,
     disableOnInteraction:true,
@@ -66,9 +65,8 @@ var swiper = new Swiper(".review-slider", {
     },
     autoplay:{
       delay: 2000,
-      disableOnInteraction:false,
+      disableOnInteraction:true,
   }
 });
-
 
 
