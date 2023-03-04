@@ -552,6 +552,7 @@ section{
         font-size: 55%;
     }
 
+
     .header{
         padding:1.5rem 2rem;
     }
@@ -563,6 +564,12 @@ section{
 }
 
 @media (max-width:768px){
+
+
+    body{
+        display: block;
+        overflow: hidden;
+    }
 
     #menu-bars{
         display: initial;
@@ -603,6 +610,10 @@ section{
 
     html{
         font-size: 50%;
+    }
+    body{
+        display: block;
+        overflow: hidden;
     }
 
     .home .home-slider .swiper-slide{
