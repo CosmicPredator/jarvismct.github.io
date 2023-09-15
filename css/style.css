@@ -1,536 +1,534 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@700&family=Michroma&display=swap');
 
 
-:root{
-    --main-color:  #c9b2eb;
+:root {
+    --main-color: #c9b2eb;
 }
 
-*{
+* {
     font-family: 'Big Shoulders Stencil Display', cursive;
-    margin:0; padding:0;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    outline: none; border:none;
+    outline: none;
+    border: none;
     text-decoration: none;
     text-transform: capitalize;
     transition: .2s linear;
 }
 
-html{
+html {
     font-size: 62.5%;
     overflow-x: hidden;
     scroll-padding-top: 7rem;
     scroll-behavior: smooth;
 }
 
-html::-webkit-scrollbar{
-    width:1rem;
+html::-webkit-scrollbar {
+    width: 1rem;
 }
 
-html::-webkit-scrollbar-track{
+html::-webkit-scrollbar-track {
     background: #101010;
 }
 
-html::-webkit-scrollbar-thumb{
+html::-webkit-scrollbar-thumb {
     background: var(--main-color);
     border-radius: 5rem;
 }
 
-body{
-    background-color: #000;
+body {
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.main {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    height: 1px;
-    width: 1px;
-    background-color: #fff;
-    border-radius: 50%;
-    box-shadow: -42vw -4vh 0px 0px #fff,25vw -41vh 0px 0px #fff,-20vw 49vh 0px 1px #fff,5vw 40vh 1px 1px #fff,29vw 19vh 1px 0px #fff,-44vw -13vh 0px 0px #fff,46vw 41vh 0px 1px #fff,-3vw -45vh 0px 1px #fff,47vw 35vh 1px 0px #fff,12vw -8vh 1px 0px #fff,-34vw 48vh 1px 1px #fff,32vw 26vh 1px 1px #fff,32vw -41vh 1px 1px #fff,0vw 37vh 1px 1px #fff,34vw -26vh 1px 0px #fff,-14vw -49vh 1px 0px #fff,-12vw 45vh 0px 1px #fff,-44vw -33vh 0px 1px #fff,-13vw 41vh 0px 0px #fff,-36vw -11vh 0px 1px #fff,-23vw -24vh 1px 0px #fff,-38vw -27vh 0px 1px #fff,16vw -19vh 0px 0px #fff,28vw 33vh 1px 0px #fff,-49vw -4vh 0px 0px #fff,16vw 32vh 0px 1px #fff,36vw -18vh 1px 0px #fff,-25vw -30vh 1px 0px #fff,-23vw 24vh 0px 1px #fff,-2vw -35vh 1px 1px #fff,-25vw 9vh 0px 0px #fff,-15vw -34vh 0px 0px #fff,-8vw -19vh 1px 0px #fff,-20vw -20vh 1px 1px #fff,42vw 50vh 0px 1px #fff,-32vw 10vh 1px 0px #fff,-23vw -17vh 0px 0px #fff,44vw 15vh 1px 0px #fff,-40vw 33vh 1px 1px #fff,-43vw 8vh 0px 0px #fff,-48vw -15vh 1px 1px #fff,-24vw 17vh 0px 0px #fff,-31vw 50vh 1px 0px #fff,36vw -38vh 0px 1px #fff,-7vw 48vh 0px 0px #fff,15vw -32vh 0px 0px #fff,29vw -41vh 0px 0px #fff,2vw 37vh 1px 0px #fff,7vw -40vh 1px 1px #fff,15vw 18vh 0px 0px #fff,25vw -13vh 1px 1px #fff,-46vw -12vh 1px 1px #fff,-18vw 22vh 0px 0px #fff,23vw -9vh 1px 0px #fff,50vw 12vh 0px 1px #fff,45vw 2vh 0px 0px #fff,14vw -48vh 1px 0px #fff,23vw 43vh 0px 1px #fff,-40vw 16vh 1px 1px #fff,20vw -31vh 0px 1px #fff,-17vw 44vh 1px 1px #fff,18vw -45vh 0px 0px #fff,33vw -6vh 0px 0px #fff,0vw 7vh 0px 1px #fff,-10vw -18vh 0px 1px #fff,-19vw 5vh 1px 0px #fff,1vw 42vh 0px 0px #fff,22vw 48vh 0px 1px #fff,39vw -8vh 1px 1px #fff,-6vw -42vh 1px 0px #fff,-47vw 34vh 0px 0px #fff,-46vw 19vh 0px 1px #fff,-12vw -32vh 0px 0px #fff,-45vw -38vh 0px 1px #fff,-28vw 18vh 1px 0px #fff,-38vw -46vh 1px 1px #fff,49vw -6vh 1px 1px #fff,-28vw 18vh 1px 1px #fff,10vw -24vh 0px 1px #fff,-5vw -11vh 1px 1px #fff,33vw -8vh 1px 0px #fff,-16vw 17vh 0px 0px #fff,18vw 27vh 0px 1px #fff,-8vw -10vh 1px 1px #fff;
-  
-  /* stars were too big with the layers above but left the code in case no one cares  -- as in, if noone's just that  one other loner who actually cares    */
-  
-  box-shadow: 24vw 9vh 1px 0px #fff,12vw -24vh 0px 1px #fff,-45vw -22vh 0px 0px #fff,-37vw -40vh 0px 1px #fff,29vw 19vh 0px 1px #fff,4vw -8vh 0px 1px #fff,-5vw 21vh 1px 1px #fff,-27vw 26vh 1px 1px #fff,-47vw -3vh 1px 1px #fff,-28vw -30vh 0px 1px #fff,-43vw -27vh 0px 1px #fff,4vw 22vh 1px 1px #fff,36vw 23vh 0px 0px #fff,-21vw 24vh 1px 1px #fff,-16vw 2vh 1px 0px #fff,-16vw -6vh 0px 0px #fff,5vw 26vh 0px 0px #fff,-34vw 41vh 0px 0px #fff,1vw 42vh 1px 1px #fff,11vw -13vh 1px 1px #fff,48vw -8vh 1px 0px #fff,22vw -15vh 0px 0px #fff,45vw 49vh 0px 0px #fff,43vw -27vh 1px 1px #fff,20vw -2vh 0px 0px #fff,8vw 22vh 0px 1px #fff,39vw 48vh 1px 1px #fff,-21vw -11vh 0px 1px #fff,-40vw 45vh 0px 1px #fff,11vw -30vh 1px 0px #fff,26vw 30vh 1px 0px #fff,45vw -29vh 0px 1px #fff,-2vw 18vh 0px 0px #fff,-29vw -45vh 1px 0px #fff,-7vw -27vh 1px 1px #fff,42vw 24vh 0px 0px #fff,45vw -48vh 1px 0px #fff,-36vw -18vh 0px 0px #fff,-44vw 13vh 0px 1px #fff,36vw 16vh 0px 1px #fff,40vw 24vh 0px 0px #fff,18vw 11vh 0px 0px #fff,-15vw -23vh 1px 0px #fff,-24vw 48vh 0px 1px #fff,27vw -45vh 1px 0px #fff,-2vw -24vh 0px 1px #fff,-15vw -28vh 0px 0px #fff,-43vw 13vh 1px 0px #fff,7vw 27vh 1px 0px #fff,47vw 5vh 0px 0px #fff,-45vw 15vh 1px 1px #fff,-5vw -28vh 0px 1px #fff,38vw 25vh 1px 1px #fff,-39vw -1vh 1px 0px #fff,5vw 0vh 1px 0px #fff,49vw 13vh 0px 0px #fff,48vw 10vh 0px 1px #fff,19vw -28vh 0px 0px #fff,4vw 7vh 0px 0px #fff,21vw 21vh 1px 1px #fff,-15vw -15vh 0px 1px #fff,-6vw -42vh 1px 0px #fff,-15vw 48vh 1px 1px #fff,-23vw 25vh 1px 1px #fff,-48vw 25vh 0px 1px #fff,-31vw -19vh 0px 1px #fff,4vw 37vh 1px 1px #fff,-43vw 28vh 0px 0px #fff,3vw -25vh 0px 1px #fff,-39vw 14vh 0px 1px #fff,-40vw 31vh 0px 1px #fff,35vw -36vh 1px 1px #fff,16vw 49vh 0px 0px #fff,6vw 39vh 0px 0px #fff,3vw -35vh 0px 1px #fff,-44vw -2vh 1px 0px #fff,-6vw 21vh 1px 0px #fff,48vw 9vh 1px 1px #fff,-43vw 30vh 1px 1px #fff,29vw -12vh 1px 1px #fff,-48vw 13vh 1px 0px #fff,-42vw 32vh 1px 1px #fff,34vw 15vh 1px 1px #fff,29vw -37vh 1px 1px #fff,28vw 2vh 0px 0px #fff;
-  animation: zoom 16s alternate infinite; 
+section {
+    padding: 2.5rem 9%;
 }
 
-section{
-    padding:2.5rem 9%;
-}
-
-.heading{
+.heading {
     text-align: center;
     padding-bottom: 2rem;
-    color:#fff;
+    color: #fff;
     text-transform: uppercase;
     font-size: 4rem;
 }
 
-.heading span{
-    color:var(--main-color);
+.heading span {
+    color: var(--main-color);
     text-transform: uppercase;
 }
 
-.btn{
+.btn {
     margin-top: 1rem;
     display: inline-block;
-    padding:.8rem 3rem;
+    padding: .8rem 3rem;
     font-size: 1.7rem;
     border-radius: .5rem;
-    background: linear-gradient(to right top, #c9b2eb, #a789d3, #8662bb, #653ba2, #410f8a);  ;
-    color:#fff;
+    background: linear-gradient(to right top, #c9b2eb, #a789d3, #8662bb, #653ba2, #410f8a);
+    ;
+    color: #fff;
     cursor: pointer;
     font-weight: 600;
 }
 
-.btn:hover{
-    background:#101010;
+.btn:hover {
+    background: #101010;
 }
 
-.header{
+.header {
     position: fixed;
-    top:0; left: 0; right: 0;
+    top: 0;
+    left: 0;
+    right: 0;
     z-index: 10000;
-    background: #101010  ;
+    background: #101010;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding:1.5rem 9%;
+    padding: 1.5rem 9%;
 }
 
-.header .logo{
+.header .logo {
     font-weight: bolder;
-    color:#fff;
+    color: #fff;
     font-size: 2.5rem;
 }
 
-.header .logo span{
-    color:var(--main-color);
+.header .logo span {
+    color: var(--main-color);
 }
 
-.header .navbar a{
+.header .navbar a {
     font-size: 1.7rem;
-    color:#fff;
+    color: #fff;
     margin-left: 2rem;
 }
 
-.header .navbar a:hover{
-    color:var(--main-color);
+.header .navbar a:hover {
+    color: var(--main-color);
 }
 
-#menu-bars{
+#menu-bars {
     font-size: 3rem;
-    color:#fff;
+    color: #fff;
     cursor: pointer;
     display: none;
 }
 
-.home .content{
+.home .content {
     text-align: center;
     padding-top: 6rem;
-    margin:2rem auto;
+    margin: 2rem auto;
     max-width: 70rem;
 }
-.home  .jarvis-logo{
+
+.home .jarvis-logo {
     position: relative;
     width: 26rem;
     height: 28rem;
     margin-top: 10px;
     margin-left: 10px;
-    opacity: 0.7;
 }
 
-.home .content h3{
-    color:#fff;
+.home .content h3 {
+    color: #fff;
     font-size: 4.5rem;
     text-transform: uppercase;
 }
 
-.home .content h3 span{
-    color:var(--main-color);
+.home .content h3 span {
+    color: var(--main-color);
     text-transform: uppercase;
 }
 
-.home .home-slider .swiper-slide{
+.home .home-slider .swiper-slide {
     overflow: hidden;
     border-radius: .5rem;
     height: 50rem;
-    width:35rem;
+    width: 35rem;
 }
 
-.home .home-slider .swiper-slide img{
+.home .home-slider .swiper-slide img {
     height: 100%;
     width: 100%;
     object-fit: fill;
 }
 
-.service .box-container{
+.service .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
-    gap:1.5rem;
+    gap: 1.5rem;
 }
 
-.service .box-container .box{
+.service .box-container .box {
     border-radius: .5rem;
-    background:rgb(57, 57, 57) ;
+    background: rgb(57, 57, 57);
     text-align: center;
-    padding:2.5rem;
+    padding: 2.5rem;
 }
 
-.service .box-container .box i{
+.service .box-container .box i {
     height: 6rem;
     width: 6rem;
     line-height: 6rem;
     border-radius: 50%;
     font-size: 2.5rem;
-    background:var(--main-color);
-    color:#fff;
+    background: var(--main-color);
+    color: #fff;
 }
 
-.service .box-container .box h3{
+.service .box-container .box h3 {
     font-size: 2rem;
-    color:#fff;
-    padding:1rem 0;
+    color: #fff;
+    padding: 1rem 0;
 }
 
-.service .box-container .box p{
+.service .box-container .box p {
     font-family: 'Michroma', sans-serif;
     font-size: 1.4rem;
-    color:#eee;
+    color: #eee;
     line-height: 1.8;
 }
 
-.about .row{
+.about .row {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap:1.5rem;
+    gap: 1.5rem;
 }
 
-.about .row .image{
-    flex:1 1 45rem;
-    padding:1rem;
+.about .row .image {
+    flex: 1 1 45rem;
+    padding: 1rem;
 }
 
-.about .row .image img{ 
+.about .row .image img {
     width: 100%;
     border-radius: .5rem;
-    border:1rem solid #101010 ;
+    border: 1rem solid #101010;
 }
 
-.about .row .content{
-    flex:1 1 45rem;
+.about .row .content {
+    flex: 1 1 45rem;
 }
 
-.about .row .content h3{
+.about .row .content h3 {
     font-size: 3.5rem;
-    color:#fff;
+    color: #fff;
 }
 
-.about .row .content p{
+.about .row .content p {
     font-family: 'Michroma', sans-serif;
     font-size: 1.5rem;
-    color:#eee;
-    padding:1rem 0;
+    color: #eee;
+    padding: 1rem 0;
     line-height: 2;
 }
 
-.gallery .box-container{
+.gallery .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
-    gap:1.5rem;
+    gap: 1.5rem;
 }
 
-.gallery .box-container .box{
+.gallery .box-container .box {
     position: relative;
-    border:1rem solid #101010 ;
+    border: 1rem solid #101010;
     border-radius: .5rem;
     height: 25rem;
     cursor: pointer;
     overflow: hidden;
 }
 
-.gallery .box-container .box img{
+.gallery .box-container .box img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-.gallery .box-container .box:hover img{
+.gallery .box-container .box:hover img {
     transform: scale(1.1);
     filter: grayscale();
 }
 
-.gallery .box-container .box .title{
+.gallery .box-container .box .title {
     position: absolute;
-    top:-10rem; left:0; right: 0;
-    background:#101010 ;
-    color:#fff;
+    top: -10rem;
+    left: 0;
+    right: 0;
+    background: #101010;
+    color: #fff;
     text-align: center;
     padding-bottom: 1rem;
     font-size: 2rem;
 }
 
-.gallery .box-container .box:hover .title{
-    top:0;
+.gallery .box-container .box:hover .title {
+    top: 0;
 }
 
-.gallery .box-container .box .icons{
+.gallery .box-container .box .icons {
     position: absolute;
-    bottom:-10rem; left:0; right: 0;
-    background:#101010 ;
+    bottom: -10rem;
+    left: 0;
+    right: 0;
+    background: #101010;
     padding-top: 1rem;
     text-align: center;
 }
 
-.gallery .box-container .box:hover .icons{
+.gallery .box-container .box:hover .icons {
     bottom: 0;
 }
 
-.gallery .box-container .box .icons a{
+.gallery .box-container .box .icons a {
     font-size: 2rem;
-    margin:.5rem 1rem;
-    color:#fff;
+    margin: .5rem 1rem;
+    color: #fff;
 }
 
-.gallery .box-container .box .icons a:hover{
-    color:var(--main-color);
+.gallery .box-container .box .icons a:hover {
+    color: var(--main-color);
 }
 
-.price .box-container{
+.price .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    gap:1.5rem;
+    gap: 1.5rem;
 }
 
-.price .box-container .box{
-    padding:2rem 0;
-    background:#101010;
+.price .box-container .box {
+    padding: 2rem 0;
+    background: #101010;
     border-radius: .5rem;
     text-align: center;
 }
 
-.price .box-container .box:hover{
+.price .box-container .box:hover {
     transform: scale(1.03);
 }
 
-.price .box-container .box .title{
-    background:var(--main-color);
-    color:#fff;
-    padding:1.5rem 0;
+.price .box-container .box .title {
+    background: var(--main-color);
+    color: #fff;
+    padding: 1.5rem 0;
     font-size: 2rem;
 }
 
-.price .box-container .box .amount{
-    color:#fff;
+.price .box-container .box .amount {
+    color: #fff;
     padding-top: 2rem;
     font-size: 4rem;
 }
 
-.price .box-container .box ul{
+.price .box-container .box ul {
     list-style-type: none;
-    padding:1rem 0;
+    padding: 1rem 0;
 }
 
-.price .box-container .box ul li{
+.price .box-container .box ul li {
     font-size: 1.5rem;
-    color:#eee;
-    padding:1rem 0;
+    color: #eee;
+    padding: 1rem 0;
 }
 
-.price .box-container .box ul li i{
-    color:var(--main-color);
+.price .box-container .box ul li i {
+    color: var(--main-color);
     padding-right: .5rem;
 }
 
-.reivew .box{
+.reivew .box {
     border-radius: .5rem;
-    background: #101010 ;
-    padding:1rem;
+    background: #101010;
+    padding: 1rem;
     position: relative;
 }
 
-.reivew .box .fa-quote-right{
+.reivew .box .fa-quote-right {
     position: absolute;
-    top:2rem; right: 2rem;
-    color:var(--main-color);
+    top: 2rem;
+    right: 2rem;
+    color: var(--main-color);
     font-size: 5rem;
 }
 
-.reivew .box .user{
+.reivew .box .user {
     display: block;
     align-items: center;
-    gap:1.5rem;
+    gap: 1.5rem;
     padding-bottom: 1rem;
 }
 
-.reivew .box .user img{
-    height:7rem;
+.reivew .box .user img {
+    height: 7rem;
     width: 7rem;
     border-radius: 50%;
     object-fit: cover;
 }
 
-.reivew .box .user h3{
+.reivew .box .user h3 {
     font-size: 2rem;
-    color:#fff;
+    color: #fff;
 }
 
-.reivew .box .user span{
+.reivew .box .user span {
     font-size: 1.5rem;
-    color:#eee;
+    color: #eee;
 }
 
-.reivew .box p{
+.reivew .box p {
     font-family: 'Michroma', sans-serif;
     line-height: 2;
-    color:#eee;
-    padding:.5rem 0;
+    color: #eee;
+    padding: .5rem 0;
     font-size: 1.6rem;
 }
 
-.contact form{
+.contact form {
     max-width: 70rem;
-    margin:1rem auto;
+    margin: 1rem auto;
     text-align: center;
 }
 
-.contact form .inputBox{
+.contact form .inputBox {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
 .contact form .inputBox input,
-.contact form textarea{
+.contact form textarea {
     width: 100%;
-    background:rgb(57, 57, 57) ;
+    background: rgb(57, 57, 57);
     border-radius: .5rem;
-    padding:1rem;
-    margin:.7rem 0;
+    padding: 1rem;
+    margin: .7rem 0;
     font-size: 1.5rem;
-    color:#fff;
+    color: #fff;
     text-transform: none;
 }
 
 .contact form .inputBox input::placeholder,
-.contact form textarea::placeholder{
-    color:#eee;
+.contact form textarea::placeholder {
+    color: #eee;
     text-transform: capitalize;
 }
 
 .contact form .inputBox input:focus,
-.contact form textarea:focus{
-    background:rgb(57, 57, 57);
+.contact form textarea:focus {
+    background: rgb(57, 57, 57);
 }
 
-.contact form .inputBox input{
+.contact form .inputBox input {
     width: 49%;
 }
 
-.contact form textarea{
+.contact form textarea {
     resize: none;
 }
 
-.footer{
-    background:#111;
+.footer {
+    background: #111;
 }
 
-.footer .box-container{
+.footer .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    gap:1.5rem;
+    gap: 1.5rem;
 }
 
-.footer .box-container .box h3{
+.footer .box-container .box h3 {
     font-size: 2.5rem;
-    padding:1rem 0;
-    color:#fff;
+    padding: 1rem 0;
+    color: #fff;
 }
 
-.footer .box-container .box a{
+.footer .box-container .box a {
     display: block;
     font-size: 1.5rem;
-    padding:1rem 0;
-    color:#eee;
+    padding: 1rem 0;
+    color: #eee;
 }
 
-.footer .box-container .box a i{
+.footer .box-container .box a i {
     padding-right: .5rem;
-    color:var(--main-color);
+    color: var(--main-color);
 }
 
-.footer .box-container .box a:hover i{
+.footer .box-container .box a:hover i {
     padding-right: 1.5rem;
-    color:#fff;
+    color: #fff;
 }
 
-.footer .credit{
+.footer .credit {
     text-align: center;
     border-top: .1rem solid #222;
-    color:#fff;
-    padding:2rem;
+    color: #fff;
+    padding: 2rem;
     padding-top: 2.5rem;
     margin-top: 1rem;
     font-size: 2rem;
 }
 
-.footer .credit span{
-    color:var(--main-color);
+.footer .credit span {
+    color: var(--main-color);
 }
 
-.theme-toggler{
+.theme-toggler {
     position: fixed;
-    top:10rem; right:-20rem;
+    top: 10rem;
+    right: -20rem;
     background: #333;
     z-index: 1000;
     width: 20rem;
     text-align: center;
 }
 
-.theme-toggler.active{
-    right:0;
+.theme-toggler.active {
+    right: 0;
 }
 
-.theme-toggler h3{
-    color:#fff;
-    padding:1rem 0;
+.theme-toggler h3 {
+    color: #fff;
+    padding: 1rem 0;
     font-size: 2rem;
 }
 
-.theme-toggler .buttons{
+.theme-toggler .buttons {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     flex-wrap: wrap;
-    gap:1rem;
-    padding:1rem;
+    gap: 1rem;
+    padding: 1rem;
 }
 
-.theme-toggler .buttons .theme-btn{
+.theme-toggler .buttons .theme-btn {
     height: 5rem;
     width: 5rem;
     border-radius: 50%;
     cursor: pointer;
 }
 
-.theme-toggler .toggle-btn{
+.theme-toggler .toggle-btn {
     position: absolute;
-    top:0; left:-5.9rem;
-    padding:1.3rem 1.5rem;
-    background:#333;
+    top: 0;
+    left: -5.9rem;
+    padding: 1.3rem 1.5rem;
+    background: #333;
     cursor: pointer;
 }
 
-.theme-toggler .toggle-btn i{
-    color:#fff;
+.theme-toggler .toggle-btn i {
+    color: #fff;
     font-size: 3rem;
     animation: spin 4s linear infinite;
 }
 
 
 @keyframes spin {
-    0%{
+    0% {
         transform: rotate(360deg);
     }
 }
@@ -546,81 +544,84 @@ section{
 
 /* media queries  */
 
-@media (max-width:991px){
+@media (max-width:991px) {
 
-    html{
+    html {
         font-size: 55%;
     }
 
 
-    .header{
-        padding:1.5rem 2rem;
+    .header {
+        padding: 1.5rem 2rem;
     }
 
-    section{
-        padding:2rem;
+    section {
+        padding: 2rem;
     }
 
 }
 
-@media (max-width:768px){
+@media (max-width:768px) {
 
 
-    body{
+    body {
         display: block;
         overflow: hidden;
     }
 
-    #menu-bars{
+    #menu-bars {
         display: initial;
     }
 
-    .header .navbar{
+    .header .navbar {
         position: absolute;
-        top:100%; left:0; right:0;
-        border-top: .1rem solid #101010 ;
-        background: #101010 ;
+        top: 100%;
+        left: 0;
+        right: 0;
+        border-top: .1rem solid #101010;
+        background: #101010;
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
 
-    .header .navbar.active{
+    .header .navbar.active {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
 
-    .fa-times{
+    .fa-times {
         transform: rotate(180deg);
     }
 
-    .header .navbar a{
+    .header .navbar a {
         display: flex;
-        background:#101010 ;
+        background: #101010;
         border-radius: .5rem;
-        padding:1.3rem;
-        margin:1.3rem;
+        padding: 1.3rem;
+        margin: 1.3rem;
         font-size: 2rem;
     }
 
-    .home .content h3{
+    .home .content h3 {
         font-size: 4rem;
     }
 
 }
 
-@media (max-width:450px){
+@media (max-width:450px) {
 
-    html{
+    html {
         font-size: 50%;
     }
-    body{
+
+    body {
         display: block;
         overflow: hidden;
     }
 
-    .home .home-slider .swiper-slide{
+    .home .home-slider .swiper-slide {
         width: 40rem;
     }
 
-    .contact form .inputBox input{
+    .contact form .inputBox input {
         width: 100%;
     }
 
